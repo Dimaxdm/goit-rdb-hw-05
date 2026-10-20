@@ -1,0 +1,15 @@
+# Python dependencies for hw05_olist.ipynb
+#
+# PostgreSQL server (14+, tested on 16.15) is a system package, not a pip one:
+#   sudo apt-get install -y postgresql
+# In Google Colab the first notebook cell installs everything automatically.
+ 
+pandas>=2.0
+SQLAlchemy>=2.0
+psycopg2-binary>=2.9
+ipython-sql>=0.5
+prettytable>=3.12   # provides the '_DEPRECATED_DEFAULT' style used by %config SqlMagic.style
+kagglehub>=0.3
+ 
+# Local run only (Colab already ships Jupyter)
+jupyter>=1.0
