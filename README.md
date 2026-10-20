@@ -135,8 +135,7 @@ Recency рахується від `reference_date`, а не від `CURRENT_DATE
 Розбивка повного pipeline за ознаками (з плану 5.2):
 
 | Ознака | ≈ час | Що коштує |
-
-|---|--:|---|
+|---|---|---|
 | `preferred_category` | 895 ms | власний join orders × items × products, 2 × `Sort external merge`, `WindowAgg` |
 | `avg_order_value_30d` | 590 ms | `Sort external merge` 9.4 MB + 2 × `WindowAgg` |
 | `stage1_orders_total` (база) | 444 ms | `Merge Left Join` + `GroupAggregate`, 103 453 buffers |
